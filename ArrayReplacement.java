@@ -1,18 +1,25 @@
-import java.util.Random;
+import java.util.Scanner;
 public class ArrayReplacement {
     public static void main(String[] args) {
-        // declare the array n and allocate memory 
-        int[] n = new int[10];
+        // import scanner
+        Scanner sc = new Scanner(System.in);
 
-        // initialize the Randon
-        Random random = new Random();
+        // declare the array x and allocate memory 
+        int[] x = new int[10];
 
-        // fill n with random numbers
-        for(int i = 0; i <= n.length; i++){
-            n[i] = random.nextInt(20);
-        }
+        // reading the first 10 int values 
+        System.out.println("Enter 10 integers");
+            for(int i = 0; i <= x.length; i++){
+                x[i] = sc.nextInt();
+            }
+            
+            for(int i = 0; i < x.length; i++){
+                if (x[i] <= 0){
+                    x[i] = 1;
+                }
+                System.out.println("x [ " + i +"] = " + x[i]);
+            }
+            sc.close();
 
-
-        
     }
 }
