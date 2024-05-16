@@ -4,8 +4,15 @@ public class ArrayReplacement {
         // declare the array n and allocate memory 
         int[] n = new int[10];
 
-        // // initialize the Randon
-        // Random random = new Random();
+        // initialize the Randon
+        Random random = new Random();
+
+        // fill n with random numbers
+        for(int i = 0; i <= n.length; i++){
+            n[i] = random.nextInt(20);
+        }
+
+
         
     }
 }
