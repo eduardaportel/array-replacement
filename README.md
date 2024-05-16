@@ -1,2 +1,2 @@
 # array-replacement
-learning how to create and manipulate arrays
+learning how to create and manipulate arrays with Java
