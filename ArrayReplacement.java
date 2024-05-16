@@ -9,17 +9,24 @@ public class ArrayReplacement {
 
         // reading the first 10 int values 
         System.out.println("Enter 10 integers");
-            for(int i = 0; i <= x.length; i++){
+            for (int i = 0; i < x.length; i++){
                 x[i] = sc.nextInt();
             }
-            
-            for(int i = 0; i < x.length; i++){
-                if (x[i] <= 0){
-                    x[i] = 1;
-                }
-                System.out.println("x [ " + i +"] = " + x[i]);
+
+        // change negatives or zero for 1
+        for (int i = 0; i <= x.length; i++){
+            if (x[i] <= 0){
+                x[i] = 1;
             }
-            sc.close();
+        }
+
+        // print array
+        for (int i = 0; i < x.length; i++) {
+            System.out.println("x[" + i + "] = " + x[i]);
+        }
+
+        // close scanner method
+        sc.close();
 
     }
 }
